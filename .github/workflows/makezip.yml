@@ -24,3 +24,4 @@ jobs:
         file: "release.zip"
         draft: false
         update_latest_release: true
+        overwrite: true
