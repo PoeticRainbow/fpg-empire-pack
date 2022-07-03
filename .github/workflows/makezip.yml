@@ -22,5 +22,5 @@ jobs:
         artifacts: "release.zip"
         generateReleaseNotes: true
         replacesArtifacts: true
-        tag: "main-tag"
+        tag: "rp-download"
         token: ${{ secrets.GITHUB_TOKEN }}
