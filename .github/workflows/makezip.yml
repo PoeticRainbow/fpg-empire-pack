@@ -17,10 +17,8 @@ jobs:
         filename: 'release.zip'
         exclusions: '*.git*'
     - name: Upload Release
-      uses: ncipollo/release-action@v1
+      uses: xresloader/upload-to-github-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        artifacts: "release.zip"
-        generateReleaseNotes: true
-        replacesArtifacts: true
-        tag: "rp-download"
-        token: ${{ secrets.GITHUB_TOKEN }}
+        file: "release.zip"
