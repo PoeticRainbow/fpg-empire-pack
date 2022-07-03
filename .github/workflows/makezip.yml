@@ -23,3 +23,4 @@ jobs:
       with:
         file: "release.zip"
         draft: false
+        update-latest-release: true
